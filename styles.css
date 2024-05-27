@@ -1,0 +1,158 @@
+/* styles.css */
+
+/* General Reset and Basic Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header, section, footer {
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo-img {
+    max-height: 60px;
+    margin-right: 10px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.main-banner {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.main-banner img {
+    width: 100%;
+    height: auto;
+}
+
+.main-banner .banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main-banner .btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #f7941e;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.intro, .courses, .development-tracking, .support-resources, .parent-forum, .expert-consultation, .expert-team, .about {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #f7941e;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer .social-media a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+footer .services, footer .contact {
+    margin-top: 10px;
+}
+
+.about h1 {
+    color: #f7941e;
+    margin-bottom: 20px;
+}
+
+.about p, .about ul {
+    text-align: left;
+    margin: 0 auto 20px;
+    max-width: 800px;
+}
+
+.about ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+/* Shape Styles */
+.shape {
+    position: absolute;
+    background: #f7941e;
+    opacity: 0.7;
+    z-index: -1;
+}
+
+.shape.circle {
+    border-radius: 50%;
+}
+
+.shape-1 {
+    top: 50px;
+    left: 50px;
+    width: 100px;
+    height: 100px;
+    animation: moveUpDown 5s infinite alternate;
+}
+
+.shape-2 {
+    bottom: 100px;
+    right: 100px;
+    width: 150px;
+    height: 150px;
+    animation: moveLeftRight 7s infinite alternate;
+}
+
+@keyframes moveUpDown {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(20px);
+    }
+}
+
+@keyframes moveLeftRight {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(20px);
+    }
+}
